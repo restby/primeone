@@ -1,0 +1,236 @@
+/* Слайдер */
+//  .slick-slider {}
+
+/* Слайдер запущен */
+//  .slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+//  .slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+//  .slick-list {}
+
+/* Лента слайдов */
+// .slick-track {
+//   padding-top: 20px;
+//   padding-bottom: 36px;
+// }
+
+/* Слайд */
+// .slick-slide {
+//   transform: scale(1);
+//   box-shadow: 0 10px 10px 2px rgba($text-color, 0.9);
+//   transition: box-shadow 0.5s, transform 0.5s;
+
+//   &:hover,
+//   &:focus {
+//     transform: scale(1.04);
+//     box-shadow: 0 6px 6px 2px rgba($text-color, 0.6);
+//     transition: box-shadow 0.5s, transform 0.5s;
+//   }
+
+//   &:active {
+//     transform: scale(1.04);
+//     box-shadow: 0 6px 6px 2px rgba($text-color, 0.6);
+//     transition: box-shadow 0.5s, transform 0.5s;
+//   }
+// }
+
+/* Слайд активный (показывается) */
+// .slick-slide.slick-active {
+
+// }
+
+/* Слайд основной */
+// .slick-slide.slick-current {
+
+// }
+
+/* Слайд по центру */
+//  .slick-slide.slick-center {}
+
+/* Клонированный слайд */
+//  .slick-slide.slick-cloned {}
+
+/* Стрелка */
+//  .slick-arrow {}
+
+/* Стрелка влево */
+//  .slick-arrow.slick-prev {}
+
+/* Стрелка вправо */
+//  .slick-arrow.slick-next {}
+
+/* Стрелка не активная */
+//  .slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+//  .slick-dots {}
+
+//  .slick-dots li {}
+
+/* Активная точка */
+//  .slick-dots li.slick-active {}
+
+/* Элемент точки */
+//  .slick-dots li button {}
+
+.slick-arrow {
+  display: none;
+}
+// .slick-arrow {
+//   position: absolute;
+//   top: 50%;
+//   width: 46px;
+//   height: 46px;
+//   border-radius: 50%;
+//   background-color: $text-color;
+//   border: none;
+//   color: transparent;
+//   transform: translateY(-50%);
+//   box-shadow: 10px 10px 10px 0 rgba($text-color, 0.5);
+
+//   &::after {
+//     position: absolute;
+//     content: "";
+//     width: 10px;
+//     height: 0;
+//     top: 50%;
+//     transform: translateY(-50%);
+//   }
+
+//   &:hover,
+//   &:focus {
+//     background-color: rgba($white-color, 0.5);
+//     box-shadow: 10px 10px 10px 0 rgba($text-color, 0.9);
+//     transition: all 0.5s ease 0s;
+//     outline: none;
+//   }
+
+//   &:active {
+//     box-shadow: 6px 6px 6px 0 rgba($text-color, 0.6);
+//     transition: all 0.1s ease 0s;
+//   }
+
+//   @media (max-width: 839.98px) {
+//     width: 36px;
+//     height: 36px;
+
+//     &::after {
+//       width: 6px;
+//     }
+//   }
+// }
+
+// .slick-arrow.slick-prev {
+//   left: 0;
+
+//   &::after {
+//     left: 11px;
+//     border-top: 8px solid transparent;
+//     border-bottom: 8px solid transparent;
+//     border-right: 18px solid $link-color;
+//   }
+
+//   &:hover::after,
+//   &:focus::after {
+//     border-right: 18px solid $text-color;
+//     transition: all 0.5s ease 0s;
+//   }
+
+//   &:active::after {
+//     border-right: 18px solid $link-color;
+//     transition: all 0.1s ease 0s;
+//   }
+
+//   @media (max-width: 839.98px) {
+//     &::after {
+//       left: 8px;
+//       border-right: 14px solid $link-color;
+//     }
+
+//     &:hover::after,
+//     &:focus::after {
+//       border-right: 14px solid $text-color;
+//     }
+
+//     &:active::after {
+//       border-right: 14px solid $link-color;
+//       transition: all 0.1s ease 0s;
+//     }
+//   }
+// }
+
+// .slick-arrow.slick-next {
+//   right: 0;
+
+//   &::after {
+//     right: 11px;
+//     border-top: 8px solid transparent;
+//     border-bottom: 8px solid transparent;
+//     border-left: 18px solid $link-color;
+//   }
+
+//   &:hover::after,
+//   &:focus::after {
+//     border-left: 18px solid $text-color;
+//     transition: all 0.5s ease 0s;
+//   }
+
+//   &:active::after {
+//     border-left: 18px solid $link-color;
+//     transition: all 0.1s ease 0s;
+//   }
+
+//   @media (max-width: 839.98px) {
+//     &::after {
+//       right: 8px;
+//       border-left: 14px solid $link-color;
+//     }
+
+//     &:hover::after,
+//     &:focus::after {
+//       border-left: 14px solid $text-color;
+//     }
+
+//     &:active::after {
+//       border-left: 14px solid $link-color;
+//       transition: all 0.1s ease 0s;
+//     }
+//   }
+// }
+
+.slick-dots {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  color: transparent;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #c8c8c8;
+  // box-shadow: 3px 3px 10px 0 rgba($text-color, 0.5);
+
+  &:hover,
+  &:focus {
+    background-color: $active-color;
+    transition: all 0.5s ease 0s;
+    outline: none;
+  }
+}
+
+.slick-dots li.slick-active button {
+  background-color: #c8c8c8;
+  transition: all 0.5s ease 0s;
+  // box-shadow: 3px 3px 8px 0 rgba($text-color, 0.9);
+}
