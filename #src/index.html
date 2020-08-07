@@ -26,10 +26,9 @@
   <meta name="theme-color" content="#fd9334">
 
   <!-- Fonts -->
-  <!-- <link rel="preload" href="fonts/Lato-Bold.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/Lato-Italic.woff2" as="font" type="font/woff2">
-  <link rel="preload" href="fonts/Lato-Light.woff2" as="font" type="font/woff2"> -->
+  <link rel="preload" href="fonts/AkzidenzGroteskBQCondensed-Bold.ttf" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/BebasNeue-Regular.ttf" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/PTSans-Regular.ttf" as="font" type="font/woff2">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.min.css">
@@ -87,34 +86,62 @@
 
   <div class="wrapper webp">
     <header class="main-header">
-      <button class="main-header__burger" aria-label="mobile menu">
-        <span></span>
-      </button>
-      <!-- /.main-header__burger -->
-      <nav class="main-header__navigation navigation">
-        <ul class="navigation__list">
-          <li>
-            <a class="navigation__link" href="#" aria-label="link to section about">About us</a>
-          </li>
-          <li>
-            <a class="navigation__link" href="#" aria-label="link to section work">Work</a>
-          </li>
-          <li>
-            <a class="navigation__link" href="#" aria-label="link to section shop">Shop</a>
-          </li>
-          <li>
-            <a class="navigation__link" href="#" aria-label="link to section contact">Contact</a>
-          </li>
-        </ul>
-        <!-- /.navigation__list -->
-      </nav>
-      <!-- /.main-header__navigation navigation -->
-      <div class="main-header__logo logo">
-        <a class="logo__link">
-          <img class="logo__img" src="img/logo.png" alt="Bike logo">
-        </a>
+      <div class="container">
+        <button class="main-header__burger" aria-label="mobile menu">
+          <span></span>
+        </button>
+        <!-- /.main-header__burger -->
+        <div class="main-header__top">
+          <div class="main-header__lang-group" data-da="navigation--da, 1, 849.98">
+            <button class="main-header__btn active">En</button>
+            <!-- /.main-header__btn -->
+            <button class="main-header__btn">Ru</button>
+            <!-- /.main-header__btn -->
+            <button class="main-header__btn">Esp</button>
+            <!-- /.main-header__btn -->
+          </div>
+          <!-- /.main-header__lang-group -->
+          <a href="#" data-da="navigation--da, 1, 849.98" class="main-header__link">Online ordering</a>
+          <!-- /.main-header__link -->
+        </div>
+        <!-- /.main-header__top -->
+        <div class="main-header__bottom">
+          <nav class="main-header__navigation navigation navigation--da">
+            <ul class="navigation__list">
+              <li>
+                <a class="navigation__link" href="#" aria-label="link to section about">About</a>
+              </li>
+              <li>
+                <a class="navigation__link" href="#" aria-label="link to section menus">Menus</a>
+              </li>
+              <li>
+                <a class="navigation__link" href="#" aria-label="link to section serivce">Serivce info</a>
+              </li>
+              <li>
+                <a class="navigation__link" href="#" aria-label="link to section gallery">Gallery</a>
+              </li>
+              <li>
+                <a class="navigation__link" href="#" aria-label="link to section frends">Frends</a>
+              </li>
+              <li>
+                <a class="navigation__link" href="#" aria-label="link to section contact">Contact</a>
+              </li>
+            </ul>
+            <!-- /.navigation__list -->
+          </nav>
+          <!-- /.main-header__navigation navigation -->
+          <div class="main-header__logo logo">
+            <a class="logo__link">
+              <span>NYC'S</span>
+              <img class="logo__img" src="img/header-logo.png" alt="Primeone logo">
+              <span>Catering</span>
+            </a>
+          </div>
+          <!-- /.main-header__logo logo -->
+        </div>
+        <!-- /.main-header__bottom -->
       </div>
-      <!-- /.main-header__logo logo -->
+      <!-- /.container -->
     </header>
     <!-- /.main-header -->
 
