@@ -47,6 +47,10 @@ img {
   line-height: 50px;
   letter-spacing: 5px;
   text-transform: uppercase;
+
+  &--black {
+    color: $black-color;
+  }
 }
 
 .item-title {

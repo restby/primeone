@@ -1,0 +1,108 @@
+.features {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  background-color: $bg-about-color;
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+
+    & li {
+      flex: 1 1 50%;
+      margin-bottom: 25px;
+      display: flex;
+
+      @media (max-width: 829.98px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      @media (max-width: $md4+px) {
+        flex: 1 1 100%;
+      }
+    }
+  }
+
+  &__icon {
+    flex: 0 0 100px;
+    height: 100px;
+    background-color: $black-color;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &--flower {
+      &::before {
+        width: 49px;
+        height: 70px;
+        top: 12px;
+        background-image: url("../../img/flower.png");
+      }
+    }
+
+    &--time {
+      &::before {
+        width: 70px;
+        height: 70px;
+        top: 15px;
+        background-image: url("../../img/time.png");
+      }
+    }
+
+    &--leaf {
+      &::before {
+        width: 59px;
+        height: 68px;
+        top: 16px;
+        background-image: url("../../img/leaf.png");
+        background-size: cover;
+      }
+    }
+
+    &--fit {
+      &::before {
+        width: 60px;
+        height: 64px;
+        top: 17px;
+        background-image: url("../../img/fit.png");
+        background-size: cover;
+      }
+    }
+
+    @media (max-width: 829.98px) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__content {
+    padding-left: 10px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 829.98px) {
+      align-items: center;
+    }
+  }
+
+  &__item-title {
+    @media (max-width: 829.98px) {
+      text-align: center;
+    }
+  }
+
+  &__descr {
+    @media (max-width: 829.98px) {
+      text-align: center;
+    }
+  }
+}

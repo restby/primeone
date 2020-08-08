@@ -1,0 +1,128 @@
+.lead {
+
+  &__row {
+    display: flex;
+    background-color: $black-color;
+
+    @media (max-width: $md3+px) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    flex: 0 0 50%;
+  }
+
+  &__wrap {
+    height: 100%;
+  }
+
+  &--services {
+    margin-top: 175px;
+
+    .lead__col {
+      &:first-child {
+        @media (max-width: $md3+px) {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        @media (max-width: $md3+px) {
+          flex: 1 1 100%;
+        }
+      }
+    }
+
+    .lead__content {
+      padding-top: 72px;
+      padding-left: 62px;
+      padding-right: 10px;
+      padding-bottom: 75px;
+
+      @media (max-width: $md3+px) {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 47px;
+        padding-bottom: 45px;
+      }
+    }
+
+    .lead__content-title {
+      max-width: 200px;
+      margin-bottom: 30px;
+
+      @media (max-width: $md3+px) {
+        max-width: none;
+      }
+    }
+
+    .lead__text {
+      max-width: 320px;
+      margin-bottom: 48px;
+
+      @media (max-width: $md3+px) {
+        max-width: none;
+      }
+    }
+
+    .lead__links-group {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .lead__link {
+      &:first-child {
+        margin-right: 14px;
+      }
+    }
+
+    @media (max-width: $md3+px) {
+      margin-top: 140px;
+    }
+
+    @media (max-width: $md4+px) {
+      margin-top: 100px;
+    }
+  }
+
+  &--about {
+    .lead__col {
+      &:first-child {
+        @media (max-width: $md3+px) {
+          flex: 1 1 100%;
+        }
+      }
+
+      &:last-child {
+        @media (max-width: $md3+px) {
+          display: none;
+        }
+      }
+    }
+
+    .lead__content {
+      padding-top: 57px;
+      padding-left: 10px;
+      padding-right: 61px;
+      padding-bottom: 57px;
+
+      @media (max-width: $md3+px) {
+        padding-left: 30px;
+        padding-right: 31px;
+        padding-top: 37px;
+        padding-bottom: 37px;
+      }
+    }
+
+    .lead__content-title {
+      text-align: right;
+
+      @media (max-width: $md3+px) {
+        text-align: left;
+      }
+    }
+  }
+
+
+}

@@ -82,7 +82,7 @@
 
     &:active {
       color: rgba($active-color, 0.3);
-      transition: all 0.5s ease 0s;
+      transition: all 0.1s ease 0s;
 
       @media (min-width: $md3+px) {
         &::after {
