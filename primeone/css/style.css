@@ -863,21 +863,21 @@ body.lock {
 
 .features__icon--flower::before {
   top: 12px;
-  background-image: url("../../img/flower.png");
+  background-image: url("../img/flower.png");
   width: 49px;
   height: 70px;
 }
 
 .features__icon--time::before {
   top: 15px;
-  background-image: url("../../img/time.png");
+  background-image: url("../img/time.png");
   width: 70px;
   height: 70px;
 }
 
 .features__icon--leaf::before {
   top: 16px;
-  background-image: url("../../img/leaf.png");
+  background-image: url("../img/leaf.png");
   background-size: cover;
   width: 59px;
   height: 68px;
@@ -885,7 +885,7 @@ body.lock {
 
 .features__icon--fit::before {
   top: 17px;
-  background-image: url("../../img/fit.png");
+  background-image: url("../img/fit.png");
   background-size: cover;
   width: 60px;
   height: 64px;
@@ -1749,10 +1749,10 @@ body.lock {
   }
 }
 @supports (-webkit-appearance:none){
-.features__icon--flower::before{background-image:url("../../img/flower.webp")}
-.features__icon--time::before{background-image:url("../../img/time.webp")}
-.features__icon--leaf::before{background-image:url("../../img/leaf.webp")}
-.features__icon--fit::before{background-image:url("../../img/fit.webp")}
+.features__icon--flower::before{background-image:url("../img/flower.webp")}
+.features__icon--time::before{background-image:url("../img/time.webp")}
+.features__icon--leaf::before{background-image:url("../img/leaf.webp")}
+.features__icon--fit::before{background-image:url("../img/fit.webp")}
 }
 
  @media (min-width: 659.98px){
