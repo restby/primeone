@@ -1,0 +1,102 @@
+.form {
+  background-color: $bg-form-color;
+
+  &__row {
+    display: flex;
+
+    @media (max-width: $md2+px) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    flex: 0 0 50%;
+
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: $md4+px) {
+        align-items: center;
+      }
+    }
+  }
+
+  &__map-img {
+    width: 683px;
+    height: 475px;
+  }
+
+  &__map-wrap {
+    height: 100%;
+
+    @media (max-width: $md3+px) {
+      height: 320px;
+    }
+  }
+
+  &__wrap {
+    padding-top: 54px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    padding-right: 10px;
+
+    @media (max-width: $md3+px) {
+      padding-top: 24px;
+      padding-left: 40px;
+      padding-bottom: 30px;
+      padding-right: 15px;
+    }
+
+    @media (max-width: $md4+px) {
+      padding-left: 15px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    color: $white-color;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 374px;
+
+    @media (max-width: $md4+px) {
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  &__input {
+    margin-bottom: 25px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #252525;
+    border: 2px solid #959595;
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #ffffff;
+
+    &::placeholder {
+      color: #959595;
+    }
+
+
+    &--area {
+      min-height: 100px;
+    }
+  }
+
+  &__btn {
+    border: none;
+  }
+}

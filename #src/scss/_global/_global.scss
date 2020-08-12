@@ -56,6 +56,10 @@ img {
 .item-title {
   text-transform: uppercase;
   letter-spacing: 2.5px;
+
+  &--white {
+    color: $white-color;
+  }
 }
 
 .section-text {
